@@ -21,10 +21,10 @@ Aplikasi ini digunakan bersama dengan projek [Dexa Web](https://github.com/tiara
 3. **Konfigurasi Environment**
    - Sesuaikan file `.env` dengan koneksi database lokal kamu. Contoh:
      ```env
-     DB_HOST=localhost
-     DB_PORT=3306
-     DB_USER=root
-     DB_PASS=password
+     PORT=5000
+     DB_HOST=your_db_portlocalhost
+     DB_USER=your_db_user
+     DB_PASSWORD=your_db_password
      DB_NAME=dexa_db
      JWT_SECRET=rahasia
      CLOCK_IN_TIME_LIMIT=9 [Optional]

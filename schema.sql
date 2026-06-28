@@ -23,10 +23,10 @@ CREATE TABLE IF NOT EXISTS attendances (
     FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
 );
 
--- Insert dummy admin user. Password is 'admin123' (bcrypt hashed)
+-- Insert dummy admin user. Password is 'password' (bcrypt hashed)
 -- Insert 10 dummy employee users. Password is 'password' (bcrypt hashed)
 INSERT INTO users (nip, password, role, name, position) VALUES 
-('10001', '$2a$10$XmN9F5/XU0Y1W9Z9K3QO1.Y6QW7v5X6Z3/0o7wYQYQYQYQYQYQYQ', 'admin', 'Administrator', 'Admin'),
+('10001', '$2b$10$5.5CokiB6YJKxZyjRweBFuWJJoJDATylLy2dKrfJS.6ibCVibeB0e', 'admin', 'Administrator', 'Admin'),
 ('10002', '$2b$10$5.5CokiB6YJKxZyjRweBFuWJJoJDATylLy2dKrfJS.6ibCVibeB0e', 'employee', 'user1', 'Software Engineer'),
 ('10003', '$2b$10$5.5CokiB6YJKxZyjRweBFuWJJoJDATylLy2dKrfJS.6ibCVibeB0e', 'employee', 'user2', 'Human Resources'),
 ('10004', '$2b$10$5.5CokiB6YJKxZyjRweBFuWJJoJDATylLy2dKrfJS.6ibCVibeB0e', 'employee', 'user3', 'Marketing Specialist'),
